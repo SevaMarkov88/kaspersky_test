@@ -6,15 +6,19 @@ import iosLogo from '../images/osIMG/IOS_logo.svg';
 
 function OptimalBlock() {
 
-  const prices = ['£27.99', '£43.99', '£35.99', '£63.99', '£43.99', '£71.99'];
+  const prices = [27.99, 43.99, 35.99, 63.99, 43.99, 71.99];
   const [isSelectOpened, setSelectOpened] = React.useState(false);
+  const [price, setPrice] = React.useState(prices[0]);
+  const [salePrice, setSalePrice] = React.useState(prices[0] - prices[0] * 0.2);
 
   function selectOpen() {
     setSelectOpened(true);
   }
 
-  function selectClose() {
+  function selectClose(event) {
     setSelectOpened(false);
+    setPrice(prices[event.target.value]);
+    setSalePrice(prices[event.target.value] - prices[event.target.value] * 0.2);
   }
 
   return (
@@ -93,16 +97,16 @@ function OptimalBlock() {
           </div>
         </div>
         <div className="price-block">
-          <p className="price-block__cost-original">£34.99</p>
-          <p className="price-block__cost-sale">£35.99</p>
+          <p className="price-block__cost-original">{'£' + price.toFixed(2)}</p>
+          <p className="price-block__cost-sale">{'£' + salePrice.toFixed(2)}</p>
         </div>
         <select className="optimal-block__select" onClick={selectOpen} onChange={selectClose}>
-          <option value="1/1">1  Device, 1 Year {isSelectOpened && prices[0]}</option>
-          <option value="1/2">1 Device, 2 Years {isSelectOpened && prices[1]}</option>
-          <option value="3/1">3 Devices, 1 Year {isSelectOpened && prices[2]}</option>
-          <option value="3/2">3 Devices, 2 Years {isSelectOpened && prices[3]}</option>
-          <option value="5/1">5 Devices, 1 Year {isSelectOpened && prices[4]}</option>
-          <option value="5/2">5 Devices, 2 Years {isSelectOpened && prices[5]}</option>
+          <option value="0">1 Device, 1 Year {isSelectOpened && '£' + prices[0]}</option>
+          <option value="1">1 Device, 2 Years {isSelectOpened && '£' + prices[1]}</option>
+          <option value="2">3 Devices, 1 Year {isSelectOpened && '£' + prices[2]}</option>
+          <option value="3">3 Devices, 2 Years {isSelectOpened && '£' + prices[3]}</option>
+          <option value="4">5 Devices, 1 Year {isSelectOpened && '£' + prices[4]}</option>
+          <option value="5">5 Devices, 2 Years {isSelectOpened && '£' + prices[5]}</option>
         </select>
         <button className="optimal-block__button">Buy Now</button>
       </div>

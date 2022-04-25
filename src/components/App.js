@@ -4,6 +4,7 @@ import FirstSection from "./FirstSection";
 import OptimalBlock from "./OptimalBlock";
 
 function App() {
+
   return (
     <div className="App">
       <Header />
