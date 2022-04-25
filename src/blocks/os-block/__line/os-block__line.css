@@ -1,0 +1,7 @@
+.os-block__line {
+  background: #666666;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  width: 1px;
+  height: 24px;
+}

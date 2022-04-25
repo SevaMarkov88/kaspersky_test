@@ -1,0 +1,6 @@
+.optimal-block__first-block {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: black;
+}

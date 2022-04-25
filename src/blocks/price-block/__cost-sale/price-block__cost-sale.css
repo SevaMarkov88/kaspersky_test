@@ -1,0 +1,9 @@
+.price-block__cost-sale {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 81%;
+  letter-spacing: -0.03em;
+  color: #1D1D1B;
+  margin: 0 0 0 12px;
+}

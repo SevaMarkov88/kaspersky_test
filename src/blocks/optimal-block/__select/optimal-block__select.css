@@ -1,0 +1,11 @@
+.optimal-block__select {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #1D1D1B;
+  padding: 12px 20px;
+  border: 2px solid #1D1D1B;
+  box-sizing: border-box;
+  background: none;
+}
