@@ -27,11 +27,11 @@ function OptimalBlock() {
         <div className="os-block">
           <p className="os-block__text">Compatible with:</p>
           <img src={windowsLogo} alt="Windows" className="os-block__icon"/>
-          <div className="os-block__line"></div>
+          <div className="os-block__line"> </div>
           <img src={macosLogo} alt="MacOS" className="os-block__icon"/>
-          <div className="os-block__line"></div>
+          <div className="os-block__line"> </div>
           <img src={androidLogo} alt="Android" className="os-block__icon"/>
-          <div className="os-block__line"></div>
+          <div className="os-block__line"> </div>
           <img src={iosLogo} alt="IOS" className="os-block__icon"/>
         </div>
         <div className="sale-block">
@@ -44,7 +44,7 @@ function OptimalBlock() {
                xmlns="http://www.w3.org/2000/svg">
             <path
               d="M7.26444 19.3876L7.26444 19.3876L7.2587 19.391C4.00606 21.2937 2 24.8015 2 28.5914V60.4086C2 64.1935 4.00221 67.7199 7.26444 69.6124C7.26466 69.6125 7.26488 69.6126 7.2651 69.6128L34.7913 85.5927C38.0221 87.4689 41.9769 87.4691 45.2078 85.5932C45.2081 85.5931 45.2084 85.5929 45.2087 85.5927L72.7349 69.6258C75.9975 67.7334 78 64.2068 78 60.4217V28.5914C78 24.8063 75.9975 21.2797 72.7349 19.3872L45.2087 3.40729C45.2086 3.40724 45.2085 3.40719 45.2084 3.40714C41.9775 1.53096 38.0225 1.53095 34.7916 3.40714C34.7915 3.40719 34.7914 3.40724 34.7913 3.40729L7.26444 19.3876Z"
-              fill="#00A88E" stroke="white" stroke-width="4"/>
+              fill="#00A88E" stroke="white" strokeWidth="4"/>
             <path d="M58 23.5999H22V24.9063H58V23.5999Z" fill="#4D4D4F"/>
             <path
               d="M46.4287 52.3459C46.4287 50.9088 43.5487 49.733 40.0001 49.733C36.4515 49.733 33.5715 50.9088 33.5715 52.3459C33.5715 53.783 36.4515 54.9588 40.0001 54.9588C43.5487 54.9588 46.4287 53.783 46.4287 52.3459Z"
@@ -89,8 +89,8 @@ function OptimalBlock() {
               <defs>
                 <linearGradient id="paint0_linear_0_97" x1="97.5" y1="10" x2="81.6666" y2="10"
                                 gradientUnits="userSpaceOnUse">
-                  <stop offset="0.458564" stop-color="#1D1D1B" stop-opacity="0.2"/>
-                  <stop offset="0.458664" stop-color="#FFEB2D"/>
+                  <stop offset="0.458564" stopColor="#1D1D1B" stopOpacity="0.2"/>
+                  <stop offset="0.458664" stopColor="#FFEB2D"/>
                 </linearGradient>
               </defs>
             </svg>

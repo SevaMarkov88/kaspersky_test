@@ -4,12 +4,12 @@ function FirstSection() {
       <div className="content-block content-block__first-section">
         <div className="first-section__text-block">
           <h1 className="first-section__title">Don’t let malware defeat you</h1>
-          <div className="first-section__line"></div>
+          <div className="first-section__line"> </div>
           <h2 className="first-section__subtitle">Protect your devices with a&nbsp;security suite made for gamers</h2>
           <div className="first-section__paragraph">
             <svg className="first-section__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
+              <path fillRule="evenodd" clipRule="evenodd"
                     d="M18.1253 6.13103L7.97281 16.1908L2 10.1173L4.13898 8.01376L8.00032 11.9402L16.0137 4L18.1253 6.13103Z"
                     fill="#00A88E"/>
             </svg>
@@ -20,7 +20,7 @@ function FirstSection() {
           <div className="first-section__paragraph">
             <svg className="first-section__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
+              <path fillRule="evenodd" clipRule="evenodd"
                     d="M18.1253 6.13103L7.97281 16.1908L2 10.1173L4.13898 8.01376L8.00032 11.9402L16.0137 4L18.1253 6.13103Z"
                     fill="#00A88E"/>
             </svg>
@@ -31,7 +31,7 @@ function FirstSection() {
           <div className="first-section__paragraph">
             <svg className="first-section__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
+              <path fillRule="evenodd" clipRule="evenodd"
                     d="M18.1253 6.13103L7.97281 16.1908L2 10.1173L4.13898 8.01376L8.00032 11.9402L16.0137 4L18.1253 6.13103Z"
                     fill="#00A88E"/>
             </svg>
@@ -41,7 +41,7 @@ function FirstSection() {
           </div>
         </div>
         <div className="first-section__img">
-          <img src={require("../images/First-section-bg.png")} alt="Image"/>
+          <img src={require("../images/First-section-bg.png")} alt="Player"/>
         </div>
       </div>
     </section>

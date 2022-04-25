@@ -2,7 +2,7 @@ function Header() {
   return (
     <header className="header">
       <div className="content-block content-block__header">
-        <a href="#" className="header__link">
+        <a href="/" className="header__link">
           <svg className="header__logo" width="156" height="30" viewBox="0 0 156 30" fill="none"
                xmlns="http://www.w3.org/2000/svg">
             <path
