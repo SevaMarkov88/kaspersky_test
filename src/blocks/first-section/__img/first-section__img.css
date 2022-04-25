@@ -1,0 +1,10 @@
+.first-section__img {
+  max-width: 799px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.first-section__img > img {
+  width: 100%;
+}

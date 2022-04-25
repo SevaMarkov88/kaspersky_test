@@ -1,0 +1,5 @@
+.first-section__paragraph {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
