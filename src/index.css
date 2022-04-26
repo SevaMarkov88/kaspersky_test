@@ -55,7 +55,6 @@
 @import url(blocks/os-block/os-block.css);
 @import url(blocks/os-block/__text/os-block__text.css);
 @import url(blocks/os-block/__icon/os-block__icon.css);
-@import url(blocks/os-block/__line/os-block__line.css);
 
 /* sale-block */
 @import url(blocks/sale-block/sale-block.css);

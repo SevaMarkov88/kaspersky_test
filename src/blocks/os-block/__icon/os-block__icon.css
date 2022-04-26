@@ -1,3 +1,9 @@
 .os-block__icon {
-  margin: 12px 16px;
+  padding: 7px 16px;
+  margin: 5px 0;
+  border-right: 1px solid rgba(102, 102, 102, 0.4);
+}
+
+.os-block__icon:last-of-type {
+  border: none;
 }

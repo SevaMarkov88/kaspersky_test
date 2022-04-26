@@ -44,11 +44,8 @@ function OptimalBlock() {
         <div className="os-block">
           <p className="os-block__text">Compatible with:</p>
           <img src={windowsLogo} alt="Windows" className="os-block__icon"/>
-          <div className="os-block__line"></div>
           <img src={macosLogo} alt="MacOS" className="os-block__icon"/>
-          <div className="os-block__line"></div>
           <img src={androidLogo} alt="Android" className="os-block__icon"/>
-          <div className="os-block__line"></div>
           <img src={iosLogo} alt="IOS" className="os-block__icon"/>
         </div>
         <div className="sale-block">
