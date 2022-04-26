@@ -1,7 +1,7 @@
 .optimal-block__second-block {
   display: grid;
   grid-template-rows: 112px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: minmax(330px, 450px) 1fr minmax(196px, 296px) minmax(118px, 296px);
   align-items: center;
   justify-items: center;
   background: linear-gradient(271.57deg, rgba(0, 168, 142, 0.4) 77.05%, rgba(126, 255, 51, 0.4) 100%), #23D1AE;

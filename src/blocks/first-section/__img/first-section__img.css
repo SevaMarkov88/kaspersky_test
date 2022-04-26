@@ -1,6 +1,8 @@
 .first-section__img {
   max-width: 799px;
-  margin: 0 -150px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .first-section__img > img {
