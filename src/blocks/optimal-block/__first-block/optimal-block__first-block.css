@@ -1,5 +1,6 @@
 .optimal-block__first-block {
-  display: flex;
-  align-items: center;
-  position: relative;
+  display: grid;
+  grid-template-rows: 40px;
+  grid-template-columns: 400px 290px;
+  gap: 35px;
 }

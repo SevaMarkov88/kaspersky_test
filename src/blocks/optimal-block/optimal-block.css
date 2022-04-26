@@ -1,6 +1,6 @@
 .optimal-block {
   max-width: 1172px;
-  position: absolute;
-  top: 200%;
-  left: 10%;
+  margin: -120px auto 0;
+  z-index: 2;
 }
+
