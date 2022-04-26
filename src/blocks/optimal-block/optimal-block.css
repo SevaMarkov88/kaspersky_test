@@ -1,4 +1,6 @@
 .optimal-block {
   max-width: 1172px;
-  margin: -113px auto 0;
+  position: absolute;
+  top: 200%;
+  left: 10%;
 }
