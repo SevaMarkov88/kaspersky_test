@@ -7,18 +7,35 @@ import iosLogo from '../images/osIMG/IOS_logo.svg';
 function OptimalBlock() {
 
   const prices = [27.99, 43.99, 35.99, 63.99, 43.99, 71.99];
+  const options = [
+    '1 Device, 1 Year',
+    '1 Device, 2 Years',
+    '3 Devices, 1 Year',
+    '3 Devices, 2 Years',
+    '5 Devices, 1 Year',
+    '5 Devices, 2 Years'
+  ];
   const [isSelectOpened, setSelectOpened] = React.useState(false);
   const [price, setPrice] = React.useState(prices[0]);
+  const [option, setOption] = React.useState(options[0]);
   const [salePrice, setSalePrice] = React.useState(prices[0] - prices[0] * 0.2);
+
+  React.useEffect(() => {
+    selectClose();
+  }, [price]);
 
   function selectOpen() {
     setSelectOpened(true);
   }
 
-  function selectClose(event) {
+  function selectClose() {
     setSelectOpened(false);
-    setPrice(prices[event.target.value]);
-    setSalePrice(prices[event.target.value] - prices[event.target.value] * 0.2);
+  }
+
+  function paramsChange(event) {
+    setPrice(prices[event.target.id]);
+    setOption(options[event.target.id])
+    setSalePrice(prices[event.target.id] - prices[event.target.id] * 0.2);
   }
 
   return (
@@ -27,11 +44,11 @@ function OptimalBlock() {
         <div className="os-block">
           <p className="os-block__text">Compatible with:</p>
           <img src={windowsLogo} alt="Windows" className="os-block__icon"/>
-          <div className="os-block__line"> </div>
+          <div className="os-block__line"></div>
           <img src={macosLogo} alt="MacOS" className="os-block__icon"/>
-          <div className="os-block__line"> </div>
+          <div className="os-block__line"></div>
           <img src={androidLogo} alt="Android" className="os-block__icon"/>
-          <div className="os-block__line"> </div>
+          <div className="os-block__line"></div>
           <img src={iosLogo} alt="IOS" className="os-block__icon"/>
         </div>
         <div className="sale-block">
@@ -100,14 +117,23 @@ function OptimalBlock() {
           <p className="price-block__cost-original">{'£' + price.toFixed(2)}</p>
           <p className="price-block__cost-sale">{'£' + salePrice.toFixed(2)}</p>
         </div>
-        <select className="optimal-block__select" onClick={selectOpen} onChange={selectClose}>
-          <option value="0">1 Device, 1 Year {isSelectOpened && '£' + prices[0]}</option>
-          <option value="1">1 Device, 2 Years {isSelectOpened && '£' + prices[1]}</option>
-          <option value="2">3 Devices, 1 Year {isSelectOpened && '£' + prices[2]}</option>
-          <option value="3">3 Devices, 2 Years {isSelectOpened && '£' + prices[3]}</option>
-          <option value="4">5 Devices, 1 Year {isSelectOpened && '£' + prices[4]}</option>
-          <option value="5">5 Devices, 2 Years {isSelectOpened && '£' + prices[5]}</option>
-        </select>
+        <div className="optimal-block__select" onClick={selectOpen}>
+          <p>{option}</p>
+          <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="9.05082" height="2.26271"
+                  transform="matrix(0.707095 0.707119 -0.707095 0.707119 2.19997 0.799988)" fill="#1D1D1B"/>
+            <rect width="9.05082" height="2.26271"
+                  transform="matrix(-0.707155 0.707059 -0.707155 -0.707059 13.4 2.39984)" fill="#1D1D1B"/>
+          </svg>
+          <div className={`optimal-block__option_block ${isSelectOpened && "optimal-block__option_open"}`}>
+            <div className="optimal-block__option" id="0" onClick={paramsChange}>{options[0] + ' £' + prices[0]}</div>
+            <div className="optimal-block__option" id="1" onClick={paramsChange}>{options[1] + ' £' + prices[1]}</div>
+            <div className="optimal-block__option" id="2" onClick={paramsChange}>{options[2] + ' £' + prices[2]}</div>
+            <div className="optimal-block__option" id="3" onClick={paramsChange}>{options[3] + ' £' + prices[3]}</div>
+            <div className="optimal-block__option" id="4" onClick={paramsChange}>{options[4] + ' £' + prices[4]}</div>
+            <div className="optimal-block__option" id="5" onClick={paramsChange}>{options[5] + ' £' + prices[5]}</div>
+          </div>
+        </div>
         <button className="optimal-block__button">Buy Now</button>
       </div>
     </section>

@@ -4,8 +4,20 @@
   font-size: 16px;
   line-height: 125%;
   color: #1D1D1B;
-  padding: 12px 20px;
+  padding: 8px 12px;
   border: 2px solid #1D1D1B;
   box-sizing: border-box;
   background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.optimal-block__select > p {
+  margin: 0 42px 0 0;
+}
+
+.optimal-block__select:hover {
+  background: #7FE3CE;
 }

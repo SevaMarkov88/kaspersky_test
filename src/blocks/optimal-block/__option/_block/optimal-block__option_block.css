@@ -1,0 +1,11 @@
+.optimal-block__option_block {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  left: -2px;
+  border: inherit;
+  border-top: none;
+  background: #15C1A1;
+  width: 100%;
+}

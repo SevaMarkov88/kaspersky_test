@@ -35,6 +35,9 @@
 @import url(blocks/optimal-block/__second-block/optimal-block__second-block.css);
 @import url(blocks/optimal-block/__select/optimal-block__select.css);
 @import url(blocks/optimal-block/__button/optimal-block__button.css);
+@import url(blocks/optimal-block/__option/optimal-block__option.css);
+@import url(blocks/optimal-block/__option/_block/optimal-block__option_block.css);
+@import url(blocks/optimal-block/__option/_open/optimal-block__option_open.css);
 
 /* product-block */
 @import url(blocks/product-block/product-block.css);
