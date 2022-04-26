@@ -5,3 +5,9 @@
     linear-gradient(103.91deg, #23D1AE 0%, rgba(1, 50, 35, 0) 59.93%);
   position: relative;
 }
+
+@media (max-width: 980px) {
+  .first-section {
+    position: static;
+  }
+}

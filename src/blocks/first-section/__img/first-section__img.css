@@ -8,3 +8,10 @@
 .first-section__img > img {
   width: 100%;
 }
+
+@media (max-width: 980px) {
+  .first-section__img {
+    position: static;
+    align-self: end;
+  }
+}

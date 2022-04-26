@@ -6,3 +6,9 @@
   color: #FFFFFF;
   margin: 0;
 }
+
+@media (max-width: 980px) {
+  .sale-block__text {
+    font-size: 16px;
+  }
+}

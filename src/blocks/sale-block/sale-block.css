@@ -2,3 +2,12 @@
   background: #8233FF;
   padding: 8px 95px;
 }
+
+@media (max-width: 980px) {
+  .sale-block {
+    justify-self: start;
+    padding: 8px 42px;
+  }
+}
+
+

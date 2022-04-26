@@ -4,3 +4,12 @@
   grid-template-columns: 400px 290px;
   gap: 60px;
 }
+
+@media (max-width: 980px) {
+  .optimal-block__first-block {
+    grid-template-rows: repeat(2, 40px);
+    grid-template-columns: 1fr;
+    gap: 0;
+    justify-items: center;
+  }
+}
